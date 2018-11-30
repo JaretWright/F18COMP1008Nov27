@@ -47,6 +47,11 @@ public class DivideZeroExceptionHandling {
             {
                 System.out.println("There was an error: "+e.getMessage());
             }
+            finally
+            {
+                System.out.println("\nthis code will always execute before the method"
+                        + "closes...even if an exception was thrown");
+            }
         } while(continueAsking);
         
     }

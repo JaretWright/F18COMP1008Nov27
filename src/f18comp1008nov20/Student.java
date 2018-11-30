@@ -57,6 +57,11 @@ public class Student {
         return gender;
     }
 
+    @Override
+    public String toString()
+    {
+        return String.format("%s %s is %d years old", firstName, lastName, this.getAge());
+    }
     public void setGender(String gender) {
         if (gender.equalsIgnoreCase("male") ||
                 gender.equalsIgnoreCase("female") ||
